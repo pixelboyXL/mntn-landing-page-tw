@@ -1,0 +1,46 @@
+.footer {
+	padding-bottom: 120px;
+}
+
+.footer__wrap {
+	display: flex;
+}
+
+.footer__logo__wrap {
+	flex-grow: 2;
+}
+
+.footer__logo {
+	margin-bottom: 24px;
+}
+
+.footer__logo__after__title {
+	margin-bottom: 154px;
+}
+
+.copyright {
+	font-family: Gilroy-500;
+	opacity: 0.5;
+}
+
+.footer__blog__wrap {
+	flex-grow: 1;
+}
+
+.footer__title {
+	margin-bottom: 24px;
+	font-size: 24px;
+	line-height: calc(32 / 24);
+	color: var(--mntn-yellow);
+}
+
+.footer__after__title {
+	font-family: Gilroy-500;
+}
+
+.footer__item {
+	cursor: pointer;
+	&:not(:last-child) {
+		margin-bottom: 16px;
+	}
+}

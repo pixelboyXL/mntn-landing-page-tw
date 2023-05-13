@@ -1,0 +1,83 @@
+:root {
+	--mntn-blue: #0B1D26;
+	--mntn-yellow: #FBD784;
+	--clearly-white: #ffffff;
+
+	--cubic--bezier: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@font-face {
+	font-family: Gilroy-500;
+	src: url(../../fonts/Gilroy-Medium.ttf);
+}
+
+@font-face {
+	font-family: Gilroy-700;
+	src: url(../../fonts/Gilroy-Bold.ttf);
+}
+
+@font-face {
+	font-family: Gilroy-800;
+	src: url(../../fonts/Gilroy-Extrabold.ttf);
+}
+
+@font-face {
+	font-family: Chronicle Display;
+	src: url(../../fonts/Chronicle-Display-Roman.otf);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+img {
+	display: block;
+}
+button {
+	margin: 0;
+	padding: 0;
+	font-family: inherit;
+	outline: none;
+	border: none;
+	background-color: transparent;
+	color: currentColor;
+	cursor: pointer;
+}
+a {
+	color: currentColor;
+	text-decoration: none;
+}
+body {
+	font-family: Gilroy-700, sans-serif;
+	color: var(--clearly-white);
+	background-color: var(--mntn-blue);
+	background-image: linear-gradient(180deg, rgba(11, 29, 38, 0) 20%, #0B1D26 36.38%), url(../../images/VG.png), url(../../images/MG.png), linear-gradient(330.24deg, rgba(11, 29, 38, 0) 71.06%, #0B1D26 108.93%), url(../../images/HG.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: top 0 right 0, top 764px right 0, top 464px right 0, top 0 right 0, top 0 right 0;
+	overflow: overlay;
+	scrollbar-gutter: stable both-edges;
+	&::-webkit-scrollbar {
+		width: 10px;
+	}
+	&::-webkit-scrollbar-track {
+		margin: 20px 0;
+		opacity: 0;
+		background-color: transparent;
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: var(--mntn-yellow);
+		border-radius: 4px;
+		border: 6px solid transparent;
+	}
+}

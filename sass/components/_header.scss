@@ -1,0 +1,42 @@
+.header {
+	padding-top: 64px;
+	padding-bottom: 198px;
+}
+
+.header__wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	font-family: Chronicle Display;
+	font-size: 32px;
+	line-height: calc(38 / 32);
+	letter-spacing: 0.01em;
+	cursor: pointer;
+}
+
+.nav__list{
+	display: flex;
+}
+
+.nav__item {
+	font-size: 18px;
+	line-height: calc(22 / 18);
+	cursor: pointer;
+	&:not(:last-child) {
+		margin-right: 40px;
+	}
+}
+
+.header__button {
+	display: flex;
+	align-items: center;
+	font-size: 17px;
+	line-height: calc(21 / 17);
+}
+
+.header__icon {
+	margin-right: 8px;
+}

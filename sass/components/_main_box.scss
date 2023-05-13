@@ -1,0 +1,159 @@
+.main {
+	padding-bottom: 200px;
+}
+
+.main__wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 843px;
+}
+
+.social__text {
+	width: 77px;
+	padding-top: 50px;
+	margin-bottom: 24px;
+	transform: rotate(90deg);
+	cursor: pointer;
+	transition: var(--cubic--bezier);
+	&:hover {
+		transform: rotate(90deg) scale(1.1);
+		color: var(--mntn-yellow);
+	}
+}
+
+.social__item {
+	&:not(:last-child) {
+		margin-bottom: 24px;
+	}
+}
+
+.title__wrap {
+	width: 950px;
+}
+
+.main__pre__title,
+.main__title {
+	margin-bottom: 33px;
+}
+
+.main__title {
+	font-family: Chronicle Display;
+	font-size: 88px;
+	line-height: calc(100 / 88);
+}
+
+.main__button {
+	display: flex;
+	align-items: center;
+	&--yellow {
+		color: var(--mntn-yellow);
+		transition: var(--cubic--bezier);
+		&:hover {
+			transform: scale(1.1);
+			color: var(--clearly-white);
+		}
+	}
+}
+
+.main__icon {
+	margin-left: 8px;
+	&__right {
+		margin-left: 16px;
+		transform: rotate(-90deg);
+	}
+}
+
+.slider__wrap {
+	position: fixed;
+	top: 38%;
+	right: 4%;
+}
+
+.slider__list {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.slider__item {
+	&:not(:last-child) {
+		margin-bottom: 40px;
+	}
+}
+
+.slider__controller {
+	width: 2px;
+	height: 260px;
+	display: block;
+	background-color: #c0c0c0;
+	position: fixed;
+	top: 50%;
+	right: 3%;
+	transform: translateY(-50%);
+}
+
+.slider__line1, 
+.slider__line2, 
+.slider__linew3, 
+.slider__line4 {
+	height: 80px;
+	width: 10px;
+	cursor: pointer;
+	transform: translateX(-50%);
+}
+
+.slider__active {
+	width: 3px;
+	height: 60px;
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	left: 1px;
+	transform: translateX(-50%);
+	transition: var(--cubic--bezier);
+}
+
+.step__item {
+	display: flex;
+	align-items: center;
+	&:not(:last-child) {
+		margin-bottom: 200px;
+	}
+	&:nth-child(2) {
+		flex-direction: row-reverse;
+	}
+}
+
+.step__wrap {
+	position: relative;
+	padding-top: 141px;
+	padding-right: 114px;
+	padding-bottom: 140px;
+	padding-left: 150px;
+	&--middle {
+		padding-right: 0;
+		padding-left: 264px;
+	}
+}
+
+.step__number {
+	position: absolute;
+	top: 5%;
+	left: 0;
+	font-size: 240px;
+	line-height: calc(240 / 240);
+	opacity: 0.1;
+	&--middle {
+		left: 12%;
+	}
+}
+
+.step__pre__title {
+	margin-bottom: 27px;
+}
+
+.step__after__title {
+	width: 632px;
+	margin-bottom: 27px;
+}
