@@ -8,22 +8,22 @@
 
 @font-face {
 	font-family: Gilroy-500;
-	src: url(../../fonts/Gilroy-Medium.ttf);
+	src: url(../fonts/Gilroy-Medium.ttf);
 }
 
 @font-face {
 	font-family: Gilroy-700;
-	src: url(../../fonts/Gilroy-Bold.ttf);
+	src: url(../fonts/Gilroy-Bold.ttf);
 }
 
 @font-face {
 	font-family: Gilroy-800;
-	src: url(../../fonts/Gilroy-Extrabold.ttf);
+	src: url(../fonts/Gilroy-Extrabold.ttf);
 }
 
 @font-face {
 	font-family: Chronicle Display;
-	src: url(../../fonts/Chronicle-Display-Roman.otf);
+	src: url(../fonts/Chronicle-Display-Roman.otf);
 }
 
 p,
@@ -61,7 +61,7 @@ body {
 	font-family: Gilroy-700, sans-serif;
 	color: var(--clearly-white);
 	background-color: var(--mntn-blue);
-	background-image: linear-gradient(180deg, rgba(11, 29, 38, 0) 20%, #0B1D26 36.38%), url(../../images/VG.png), url(../../images/MG.png), linear-gradient(330.24deg, rgba(11, 29, 38, 0) 71.06%, #0B1D26 108.93%), url(../../images/HG.png);
+	background-image: linear-gradient(180deg, rgba(11, 29, 38, 0) 20%, #0B1D26 36.38%), url(../images/VG.png), url(../images/MG.png), linear-gradient(330.24deg, rgba(11, 29, 38, 0) 71.06%, #0B1D26 108.93%), url(../images/HG.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: top 0 right 0, top 764px right 0, top 464px right 0, top 0 right 0, top 0 right 0;
