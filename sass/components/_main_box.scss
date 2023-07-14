@@ -1,4 +1,5 @@
 .main {
+	padding-top: 134px;
 	padding-bottom: 200px;
 }
 
@@ -29,7 +30,7 @@
 }
 
 .title__wrap {
-	width: 950px;
+	width: 55%;
 }
 
 .main__pre__title,
@@ -156,4 +157,15 @@
 .step__after__title {
 	width: 632px;
 	margin-bottom: 27px;
+}
+
+.step__image {
+	position: absolute;
+	right: 210px;
+	max-width: 566px;
+	max-height: 720px;
+}
+
+.step__image--middle {
+	left: 210px;
 }

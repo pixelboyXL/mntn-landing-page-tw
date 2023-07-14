@@ -32,16 +32,16 @@ function handleButtonClick(event) {
 };
 
 function handleScroll() {
-    if (window.scrollY <= 835) {
+    if (window.scrollY < stepFirst.offsetTop) {
         active.style.top = '0';
     };
-    if (window.scrollY >= 835) {
+    if (window.scrollY >= stepFirst.offsetTop - 200) {
         active.style.top = '60px';
     };
-    if (window.scrollY >= 1670) {
+    if (window.scrollY >= stepSecond.offsetTop - 200) {
         active.style.top = '120px';
     };
-    if (window.scrollY >= 2505) {
+    if (window.scrollY >= stepThird.offsetTop - 200) {
         active.style.top = '200px';
     };
 };

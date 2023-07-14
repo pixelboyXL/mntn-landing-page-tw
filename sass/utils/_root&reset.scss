@@ -61,10 +61,10 @@ body {
 	font-family: Gilroy-700, sans-serif;
 	color: var(--clearly-white);
 	background-color: var(--mntn-blue);
-	background-image: linear-gradient(180deg, rgba(11, 29, 38, 0) 20%, #0B1D26 36.38%), url(../images/VG.png), url(../images/MG.png), linear-gradient(330.24deg, rgba(11, 29, 38, 0) 71.06%, #0B1D26 108.93%), url(../images/HG.png);
+	background-image: url(../images/bg_image.jpg);
 	background-repeat: no-repeat;
 	background-size: contain;
-	background-position: top 0 right 0, top 764px right 0, top 464px right 0, top 0 right 0, top 0 right 0;
+	background-position: top 0 right 0;
 	overflow: overlay;
 	scrollbar-gutter: stable both-edges;
 	&::-webkit-scrollbar {
