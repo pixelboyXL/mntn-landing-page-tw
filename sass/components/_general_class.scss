@@ -1,23 +1,30 @@
-.first__container {
+.container {
+	width: 100%;
+	padding-right: 80px;
+	padding-left: 80px;
+	margin: 0 auto;
+	@include not_desk {
+		padding: 0;
+	}
+}
+
+.first_container {
 	max-width: 1760px;
-	margin: 0 auto;
 }
 
-.second__container {
-	max-width: 1464px;
-	margin: 0 auto;
+.second_container {
+	max-width: 1462px;
 }
 
-.standart__text {
-	font-size: 18px;
-	line-height: calc(22 / 18);
+.standart_text {
+	@include font(18px, null, 22px, null);
 }
 
-.pre__title {
+.pre_title {
 	display: flex;
 	align-items: center;
 	font-family: Gilroy-800;
-	letter-spacing: 6px;
+	@include font(null, null, null, 6px);
 	color: var(--mntn-yellow);
 	text-transform: uppercase;
 	&::before {
@@ -30,17 +37,15 @@
 	}
 }
 
-.minor__title {
-	width: 555px;
+.minor_title {
+	max-width: 555px;
 	margin-bottom: 27px;
 	font-family: Chronicle Display;
-	font-size: 64px;
-	line-height: calc(77 / 64);
+	@include font(64px, null, 77px, null);
 }
 
-.after__title {
-	font-size: 18px;
-	line-height: calc(32 / 18);
+.after_title {
+	@include font(18px, null, 32px, null);
 }
 
 .icon {
@@ -48,7 +53,7 @@
 	fill: currentColor;
 }
 
-.transform__with__scale {
+.transform_with_scale {
 	transition: var(--cubic--bezier);
 	&:hover {
 		transform: scale(1.1);
@@ -56,7 +61,7 @@
 	}
 }
 
-.transform__color {
+.transform_color {
 	transition: var(--cubic--bezier);
 	&:hover {
 		color: var(--mntn-yellow);

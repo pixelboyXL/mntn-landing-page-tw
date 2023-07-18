@@ -35,14 +35,20 @@ h5,
 h6 {
 	margin: 0;
 }
+
 ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
+
 img {
 	display: block;
+	max-width: 100%;
+	width: 100%;
+	height: auto;
 }
+
 button {
 	margin: 0;
 	padding: 0;
@@ -53,10 +59,12 @@ button {
 	color: currentColor;
 	cursor: pointer;
 }
+
 a {
 	color: currentColor;
 	text-decoration: none;
 }
+
 body {
 	font-family: Gilroy-700, sans-serif;
 	color: var(--clearly-white);
@@ -64,7 +72,7 @@ body {
 	background-image: url(../images/bg_image.jpg);
 	background-repeat: no-repeat;
 	background-size: contain;
-	background-position: top 0 right 0;
+	background-position: top 0 left 0;
 	overflow: overlay;
 	scrollbar-gutter: stable both-edges;
 	&::-webkit-scrollbar {

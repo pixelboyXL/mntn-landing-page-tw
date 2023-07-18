@@ -1,12 +1,12 @@
-const scrollDown = document.getElementById('title__scroll__down');
-const scrollStart = document.getElementById('slider__item__start');
-const scrollToFirst = document.getElementById('slider__item__01');
-const scrollToSecond = document.getElementById('slider__item__02');
-const scrollToThird = document.getElementById('slider__item__03');
-const stepFirst = document.getElementById('step__item__1');
-const stepSecond = document.getElementById('step__item__2');
-const stepThird = document.getElementById('step__item__3');
-const active = document.getElementById('slider__active');
+const scrollDown = document.getElementById('hero__title_scroll_down');
+const scrollStart = document.getElementById('hero__slider_item_start');
+const scrollToFirst = document.getElementById('hero__slider_item_01');
+const scrollToSecond = document.getElementById('hero__slider_item_02');
+const scrollToThird = document.getElementById('hero__slider_item_03');
+const stepFirst = document.getElementById('step__item_1');
+const stepSecond = document.getElementById('step__item_2');
+const stepThird = document.getElementById('step__item_3');
+const active = document.getElementById('hero__slider_active');
 
 window.addEventListener('click', handleButtonClick);
 window.addEventListener('scroll', handleScroll);

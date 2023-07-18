@@ -6,7 +6,7 @@
 	display: flex;
 }
 
-.footer__logo__wrap {
+.footer__logo_wrap {
 	flex-grow: 2;
 }
 
@@ -14,7 +14,7 @@
 	margin-bottom: 24px;
 }
 
-.footer__logo__after__title {
+.footer__logo__after_title {
 	margin-bottom: 154px;
 }
 
@@ -23,18 +23,17 @@
 	opacity: 0.5;
 }
 
-.footer__blog__wrap {
+.footer__blog_wrap {
 	flex-grow: 1;
 }
 
 .footer__title {
 	margin-bottom: 24px;
-	font-size: 24px;
-	line-height: calc(32 / 24);
+	@include font(24px, null, 32px, null);
 	color: var(--mntn-yellow);
 }
 
-.footer__after__title {
+.footer__after_title {
 	font-family: Gilroy-500;
 }
 
