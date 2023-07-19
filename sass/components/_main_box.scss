@@ -80,6 +80,12 @@
 	position: fixed;
 	top: 38%;
 	right: 4%;
+	@include smaller_than_tab {
+		top: 35%;
+	}
+	@include smaller_than_tel {
+		top: 23%;
+	}
 }
 
 .hero__slider_list {
@@ -103,6 +109,12 @@
 	top: 50%;
 	right: 3%;
 	transform: translateY(-50%);
+	@include smaller_than_tab {
+		top: 45%;
+	}
+	@include smaller_than_tel {
+		top: 30%;
+	}
 }
 
 .hero__slider_line1, 
@@ -147,7 +159,7 @@
 		padding-right: 0;
 		padding-left: 264px;
 	}
-	@include not_desk {
+	@include smaller_than_desk {
 		padding-right: 57px;
 		padding-left: 55px;
 		&--middle {
@@ -179,7 +191,7 @@
 .step__image {
 	max-width: 566px;
 	max-height: 720px;
-	@include not_desk {
+	@include smaller_than_desk {
 		max-width: 333px;
 		max-height: 460px;
 	}

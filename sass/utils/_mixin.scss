@@ -5,8 +5,20 @@
     letter-spacing: $ls;
 }
 
-@mixin not_desk {
+@mixin smaller_than_desk {
     @media screen and (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin smaller_than_tab {
+    @media screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin smaller_than_tel {
+    @media screen and (max-width: 479px) {
         @content;
     }
 }

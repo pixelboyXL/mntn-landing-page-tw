@@ -3,17 +3,23 @@
 	padding-right: 80px;
 	padding-left: 80px;
 	margin: 0 auto;
-	@include not_desk {
+	@include smaller_than_desk {
 		padding: 0;
 	}
 }
 
 .first_container {
 	max-width: 1760px;
+	@include smaller_than_desk {
+		min-width: 900px;
+	}
 }
 
 .second_container {
 	max-width: 1462px;
+	@include smaller_than_desk {
+		min-width: 850px;
+	}
 }
 
 .standart_text {
