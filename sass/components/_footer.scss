@@ -7,15 +7,18 @@
 }
 
 .footer__logo_wrap {
-	flex-grow: 2;
+	max-width: 347px;
+	margin-right: auto;
 }
 
 .footer__logo {
+	display: block;
 	margin-bottom: 24px;
 }
 
 .footer__logo__after_title {
 	margin-bottom: 154px;
+	max-width: 303px;
 }
 
 .copyright {
@@ -23,8 +26,16 @@
 	opacity: 0.5;
 }
 
+.footer__blog_more_wrap {
+	display: flex;
+}
+
 .footer__blog_wrap {
-	flex-grow: 1;
+	max-width: 193px;
+	margin-right: 212px;
+	@include smaller_than_desk {
+		margin-right: 100px;
+	}
 }
 
 .footer__title {
@@ -42,4 +53,8 @@
 	&:not(:last-child) {
 		margin-bottom: 16px;
 	}
+}
+
+.footer__more_wrap {
+	max-width: 161px;
 }
